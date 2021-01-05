@@ -1,0 +1,65 @@
+$monochrome: false;
+$pixel-size: 8px;
+
+$pikachu-line: #181818;
+$pikachu-body: #fefe00;
+$pikachu-tail: #823e00;
+$pikachu-cheek: #fe4100;
+
+// Monochrome colors
+@if $monochrome {
+  $pikachu-line: #181818;
+  $pikachu-body: #f8f8f8;
+  $pikachu-cheek: #c0c0c0;
+  $pikachu-tail: #c0c0c0;
+}
+
+$pikachu: (
+  frames: (
+    "               ""               ",
+    "    ██         ""               ",
+    "█████████      ""    ██         ",
+    "█░░░███░░███   ""█████████      ",
+    " █░░░█░░░░░░█  ""█░░░███░░███   ",
+    "  █░░██░░░░░░█ "" █░░░█░░░░░░█  ",
+    "   █░░█░░░░░░█ ""  █░░██░░░░░░█ ",
+    " ███░█░░░░░█░░█""   █░░█░░░░░░█ ",
+    " █░░██░░░O░░░░█"" ███░█░░░░░█░░█",
+    "  █▒█▒▒▒░░░░░█ "" █░░░█░░░O░░░░█",
+    " █▒▒█░░░░░░█░█ ""  █▒█▒▒▒░░░░░█ ",
+    "  █▒█▒▒▒░░██░█ "" █▒▒█░░░░░░█░█ ",
+    "   ███░░░░░░██ ""  █▒█▒▒▒░░██░█ ",
+    "   █░██░░░░█░░█""   ███░░░░░░░█ ",
+    "    █░░████ ██ ""      ██░░░██  ",
+    "     ██        ""        ███    "
+  ),
+  colors: (
+    "█": $pikachu-line,
+    "░": $pikachu-body,
+    "▒": $pikachu-tail,
+    "O": $pikachu-cheek
+  ),
+  speed: .1s
+);
+
+@include pixel-art((
+  pikachu: $pikachu
+), (
+  pixel-size: $pixel-size
+));
+
+
+// Centering Pikachu
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pikachu {
+  margin: 0 $pixel-size * 2;
+}
