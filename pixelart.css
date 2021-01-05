@@ -1,0 +1,22 @@
+body {
+    background: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas {
+    width: 80px;
+    height: 80px;
+}
+
+.pixel {
+    width: 5px;
+    height: 5px;
+    float: left;
+}
+
+.pixel:nth-child(3) {
+    background: orange;
+}
