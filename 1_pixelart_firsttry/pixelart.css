@@ -1,5 +1,5 @@
 body {
-    background: #333;
+    background: #110325;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -18,5 +18,5 @@ body {
 }
 
 .pixel:nth-child(3) {
-    background: orange;
+    background: #EDEDF1;
 }
