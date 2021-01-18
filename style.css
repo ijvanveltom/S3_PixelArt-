@@ -2,6 +2,10 @@ body {
     background-color: #EDEDF1;
 }
 
+.block {
+    background-color: #DADAF6;
+}
+
 h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
