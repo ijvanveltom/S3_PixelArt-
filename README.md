@@ -2,7 +2,7 @@
 GIT waarin word gewerkt aan het ontdekken en werken met Pixel Art middels CSS. Goed om te weten voor we starten is dat er meer soorten css zijn. SCSS is gerelateerd aan CSS maar heeft enkele afwijkingen. Dit project wordt gemaakt voor Fontys Hogeschool ICT.
 
 # Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 # Build With
 - Visual Studio Code
